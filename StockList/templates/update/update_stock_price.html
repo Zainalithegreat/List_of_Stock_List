@@ -1,0 +1,15 @@
+{% extends "default.html" %}
+{% block title %}Select a Stock and update the Price{% endblock %}
+{% block header %}Select a Stock and update the Price:{% endblock %}
+{% block content %}
+    <form method="POST" action="do_update_stock_price">
+        <table class="data_entry_form">
+            <tr><th><label></label>Stock:</th><td>
+                {% set select_name = "stock" %}
+                {% include "select_stock.html" %}
+            </td></tr>
+            <tr><th><label>Price: </label></th><td><input type="text" name="price"></td></tr>
+            <tr><th colspan="2"><button type="submit">Update</button></th></tr>
+        </table>
+    </form>
+{% endblock %}

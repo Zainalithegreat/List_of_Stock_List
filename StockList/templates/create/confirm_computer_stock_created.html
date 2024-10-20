@@ -1,0 +1,7 @@
+{% extends "default.html" %}
+{% block title %}Computer Stock "{{ stock.get_key() }}: {{ stock.get_price() }} " Created{% endblock %}
+{% block header %}Stock "{{ stock.get_name() }}" Created{% endblock %}
+{% block content %}
+<p>Created a new stock:</p>
+<p>{{ stock }}:</p>
+{% endblock %}

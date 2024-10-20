@@ -1,0 +1,6 @@
+{% extends "default.html" %}
+{% block title %}Stock Added to Stocklist{% endblock %}
+{% block header %}Stock Added to Stocklist{% endblock %}
+{% block content %}
+<p>The stock {{ stock.get_printable_key() }} was added to the stocklist {{ stocklist.get_printable_key() }}</p>
+{% endblock %}

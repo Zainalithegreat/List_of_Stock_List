@@ -1,0 +1,13 @@
+{% extends "default.html" %}
+{% block title %}{{ stocklist.get_name() }} Stocklist{% endblock %}
+{% block header %}{{ stocklist.get_name() }} Stocklist{% endblock %}
+{% block content %}
+
+<p>{{ stocklist.get_description() }}: </p>
+<h2>Stocks in this stocklist:</h2>
+<ul>
+{% for stock in stocklist %}
+<li>{{ stock }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

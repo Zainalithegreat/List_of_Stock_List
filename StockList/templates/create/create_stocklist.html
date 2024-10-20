@@ -1,0 +1,12 @@
+{% extends "default.html" %}
+{% block title %}Create New Stocklist{% endblock %}
+{% block header %}Please enter the information for a new stocklist in the form below:{% endblock %}
+{% block content %}
+    <form method="POST" action="do_create_stocklist">
+        <table class="data_entry_form">
+            <tr><th><label></label>Name:</th><td><input type="text" name="name"></td></tr>
+            <tr><th><label></label>Discription:</th><td><input type="text" name="Discription"></td></tr>
+            <tr><th colspan="2"><button type="submit">Create</button></th></tr>
+        </table>
+    </form>
+{% endblock %}

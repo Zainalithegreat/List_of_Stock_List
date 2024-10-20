@@ -1,0 +1,5 @@
+ <select name="{{ select_name }}">
+    {% for stock in stocks %}
+        <option value="{{ stock.get_key() }}"> {{ stock.get_printable_key() }}</option>
+    {% endfor %}
+</select>

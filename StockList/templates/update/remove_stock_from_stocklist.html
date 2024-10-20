@@ -1,0 +1,18 @@
+{% extends "default.html" %}
+{% block title %}Remove a stock from Stocklist{% endblock %}
+{% block header %}Select a Stock and remove it to a stocklist:{% endblock %}
+{% block content %}
+    <form method="POST" action="do_remove_stock_from_stocklist">
+        <table class="data_entry_form">
+            <tr><th><label></label>Stock:</th><td>
+                {% set select_name = "stock" %}
+                {% include "select_stock.html" %}
+            </td></tr>
+            <tr><th><label></label>Stocklists:</th><td>
+                {% set select_name = "stocklist" %}
+                {% include "select_stocklist.html" %}
+            </td></tr>
+            <tr><th colspan="2"><button type="submit">Remove</button></th></tr>
+        </table>
+    </form>
+{% endblock %}

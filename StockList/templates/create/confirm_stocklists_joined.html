@@ -1,0 +1,14 @@
+{% extends "default.html" %}
+{% block title %}Stocklist "{{ new_stocklist.get_name() }}" Created{% endblock %}
+{% block header %}Stocklist "{{ new_stocklist.get_name() }}" Created{% endblock %}
+{% block content %}
+ <p>The existing stocklist{{ first_stocklist.get_name() }} and {{ second_stocklist.get_name() }} were successfully joined together to form {{ new_stocklist.get_name() }}</p>
+<p>Created a new stocklist:</p>
+<p>{{ new_stocklist.get_description() }}:</p>
+<h2>Stocks:</h2>
+<ul>
+{% for stock in new_stocklist %}
+<li>{{ stock }}</li>
+</ul>
+{% endfor %}
+{% endblock %}

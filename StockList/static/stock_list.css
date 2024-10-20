@@ -1,0 +1,22 @@
+.data_entry_form th{
+    text-align: right;
+}
+.data_entry_form td{
+    text-align: left;
+}
+.data_entry_form{
+    padding: 2em;
+}
+.top_button{
+    padding: .5em;
+    margin: .2em;
+    float: right;
+    color: white;
+    font-weight: bold;
+    background: #666666;
+    font-family: sans-serif;
+}
+.top_button a {
+    color: white;
+    text-decoration: none;
+}

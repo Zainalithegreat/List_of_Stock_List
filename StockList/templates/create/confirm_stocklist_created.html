@@ -1,0 +1,7 @@
+{% extends "default.html" %}
+{% block title %}Stocklist "{{ stocklist.get_name() }}" Created{% endblock %}
+{% block header %}Stocklist "{{ stocklist.get_name() }}" Created{% endblock %}
+{% block content %}
+<p>Created a new stocklist:</p>
+<p>{{ stocklist.get_description() }}:</p>
+{% endblock %}

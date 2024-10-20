@@ -1,0 +1,6 @@
+{% extends "default.html" %}
+{% block title %}Stock Removed from Stocklist{% endblock %}
+{% block header %}Stock Remove from Stocklist{% endblock %}
+{% block content %}
+<p>The stock {{ stock.get_printable_key() }} was removed from the stocklist {{ stocklist.get_printable_key() }}</p>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "default.html" %}
+{% block title %}Create New Generic Stock{% endblock %}
+{% block header %}Please enter the information for a new bank stock in the form below:{% endblock %}
+{% block content %}
+    <form method="POST" action="do_create_bank_stock">
+        <table class="data_entry_form">
+
+            <tr><th><label></label>Name:</th><td><input type="text" name="name"></td></tr>
+            <tr><th><label></label>Price:</th><td><input type="text" name="price"></td></tr>
+            <tr><th><label></label>Starting_price:</th><td><input type="text" name="starting_price"></td></tr>
+            <tr><th><label></label>Date:</th><td><input type="text" name="date"></td></tr>
+            <tr><th><label></label>Time:</th><td><input type="text" name="time"></td></tr>
+            <tr><th><label></label>num_accounts:</th><td><input type="text" name="num_accounts"></td></tr>
+            <tr><th colspan="2"><button type="submit">Create</button></th></tr>
+        </table>
+    </form>
+{% endblock %}

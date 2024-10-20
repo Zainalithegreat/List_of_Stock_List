@@ -1,0 +1,10 @@
+{% extends "default.html" %}
+{% block title %}Print Stocklists{% endblock %}
+{% block header %}All Stocklists:{% endblock %}
+{% block content %}
+<ul>
+    {% for stocklist in stocklists %}
+        <li><a href="/print_stocklist?stocklist={{ stocklist.get_key() }}">{{ stocklist.get_name() }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,5 @@
+ <select name="{{ select_name }}">
+    {% for stocklist in stocklists %}
+        <option value="{{ stocklist.get_key() }}"> {{ stocklist.get_name() }}</option>
+    {% endfor %}
+</select>

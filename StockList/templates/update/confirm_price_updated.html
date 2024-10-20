@@ -1,0 +1,7 @@
+{% extends "default.html" %}
+{% block title %}Price updated{% endblock %}
+{% block header %}{{ stock.get_printable_key() }} updated{% endblock %}
+{% block content %}
+<p>The new contents of the stocks are:</p>
+{{ stock }}
+{% endblock %}
